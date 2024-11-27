@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Bokor&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "bokor", serif;
+    --primary-color: #000000;
+    /* black */
+    --secondary-color: #cfcfcf;
+    /* off-white */
+    --tertiary-color: #5e5e5e;
+    /* gray */
+    --hightlight-color: #fffff;
+    /* white */
+}
+
+/* Global Styles */
+
+body {
+    background-color: var(--primary-color);
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--secondary-font);
+    color: var(--secondary-color);
+}
+
+p {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+}

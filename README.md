@@ -1,131 +1,385 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# The Dead Swan
 
-Welcome USER_NAME,
+![Welcome to The Dead Swan](/documentation/multi-device-mockup.png) 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+The Dead Swan was created as my first milestone project for the Code Institutes Level 5 Diploma in Web Application Development.
 
-## Gitpod Reminders
+Link to deployed site: 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
 
-A blue button should appear to click: _Make Public_,
+## CONTENTS
 
-Another blue button should appear to click: _Open Browser_.
+* [User Experience](#user-experience)
+  * [Project Goals](#project-goals)
+  * [User Stories](#user-stories)
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+* [Design](#design)
+  * [Colour Scheme](#colour-scheme)
+  * [Typography](#typography)
+  * [Imagery](#imagery)
+  * [Wireframes](#wireframes)
 
-A blue button should appear to click: _Make Public_,
+* [Features](#features)
+  * [Elements Fount on Each Page](#elements-found-on-each-page)
+  * [Future Implementations](#future-implementations)
+  * [Accessibility](#accessibility)
 
-Another blue button should appear to click: _Open Browser_.
+* [Technologies Used](#technologies-used)
+  * [Languages Used](#languages-used)
+  * [Databases Used](#databases-used)
+  * [Frameworks Used](#frameworks-used)
+  * [Libraries & Packages Used](#libraries--packages-used)
+  * [Programs Used](#programs-used)
+    * [Google Books API](#google-books-api)
+    * [Flask Blueprints](#flask-blueprints)
+    * [Flask Migrate](#flask-migrate)
+    * [Error Handling](#error-handling)
+    * [Defensive Programming](#defensive-programming)
+    * [Database Migration to ElephantSQL](#database-migration-to-elephantsql)
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* [Deployment & Local Development](#deployment--local-development)
+  * [Deployment](#deployment)
+  * [Local Development](#local-development)
+    * [How to Fork](#how-to-fork)
+    * [How to Clone](#how-to-clone)
 
-To log into the Heroku toolbelt CLI:
+* [Testing](#testing)
+  
+* [Credits](#credits)
+  * [Code Used](#code-used)
+  * [Content](#content)
+  * [Media](#media)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- - -
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+## User Experience
 
-### Connecting your Mongo database
+### Project Goals
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
 
-------
+### User Stories
 
-## Release History
+#### __Target Audience__
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**June 18, 2024,** Add Mongo back into template
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+#### __First Time Visitor Goals__
 
-**May 28 2024:** Fix Mongo and Links installs
+As a first time user of the site I want to be able to:
 
-**April 26 2024:** Update node version to 16
+* 
 
-**September 20 2023:** Update Python version to 3.9.17.
+#### __Returning Visitor Goals__
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+As a returning registered user of the site I want to be able to:
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+* 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+#### __Admin User__
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+As an administrator for the site I want to be able to:
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+* 
+- - -
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Design
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Colour Scheme
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Typography
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+I used Google Fonts to import the following fonts for use in the site:
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+##### Logo 
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+##### Headings 
 
-------
+##### Paragraphs 
 
-## FAQ about the uptime script
 
-**Why have you added this script?**
+##### Icons 
+[Font Awesome](https://fontawesome.com/icons)
+Icons are a good way to add accessability features to a website 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Imagery
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Wireframes
 
-**So….?**
+Wireframes were created for mobile and desktop using Balsamiq.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+#### __Home Page__
 
-**Can I opt out?**
+![Home Page](/documentation/wireframes/wireframehomepage.png)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+#### __Contact Modal__
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+![]](/documentation/wireframes/wireframecontactus.png)
 
-**Anything more?**
+#### __Gallery Page__
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+![Login Page](/documentation/wireframes/wireframegallery.png)
 
----
+#### __History Page__
 
-Happy coding!
+![Profile Page](/documentation/wireframes/wireframehistory.png)
+
+#### __Live Page__
+
+![Live Page](/documentation/wireframes/wireframelivedates.png)
+
+ -----
+
+
+## Features
+
+The website is comprised of 4 pages and a modal which are extended from a base template.
+
+* Home page
+* Gallery page
+* History page
+* Live page
+
+* Contact form modal
+
+
+### Elements found on each page
+
+
+* Navbar - The Navbar is displayed on all pages of the website, it allows users to navigate the site with ease. The navbar is comprised of a logo, and links to navigate within the site and a search bar. It has a text-colour indicator to show the current page.
+
+  __Navbar__
+  
+* Bootstrap navbar styled to have right sided margin.
+  
+  ![Navbar](/documentation/manual-testing/homepage-nav.png)
+
+  __Nav-button__
+
+* Flex wrap reverse used to get nav button to toggle and logo to sit below for smaller screen resolutions. 
+
+    ![Nav-button-toggler](/documentation/manual-testing/mobile-nav-toggler.png)
+
+
+  __Footer__
+
+* Footer containing the modal button and external social media icons links is displayed on all pages of the website. d-none used to hide watch link for smaller devices.
+  ![Footer](/documentation/manual-testing/homepage-footer.png)
+
+- - -
+
+### Home Page
+
+![Home Page](/documentation/manual-testing/desktop-index.png)
+
+![Home Page](/documentation/manual-testing/mobile-index.png)
+
+![Home Page](/documentation/manual-testing/tablet-index.png)
+
+### Gallery Page
+
+![Gallery Page](/documentation/manual-testing/desktop-gallery.png)
+
+### History Page
+
+![History Page](/documentation/manual-testing/desktop-history.png)
+
+### Live Page
+
+![Live Page](/documentation/manual-testing/desktop-live.png)
+
+### Contact Form Modal
+
+![Contact Form Modal](/documentation/manual-testing/desktop-modal.png)
+
+- - -
+
+### Future Implementations
+
+In future implementations I would like to:
+
+* Create a ticket booking system/allow users to boy tickets on the website.
+* Create an online shop selling merchandise.
+* Add a sign up link for a mailing list.
+* Add a blog documenting tour journey.
+* Add a live instagram or twitter feed.
+* Add an audio player with user controls to the gallery page.
+
+### Accessibility
+
+I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been achieved by:
+
+* Using semantic HTML.
+* Using descriptive alt attributes and titles for images and video on the site.
+* Providing information for screen readers where there are icons used and no text.
+* Adding "current" to navigation for screen reader to inform of page being accessed.
+* Ensuring that there is a sufficient colour contrast throughout the site.
+
+- - -
+
+## Technologies Used
+
+### Languages Used
+
+HTML, CSS.
+
+### Databases Used
+
+[css flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+
+
+### Frameworks Used
+
+[Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - V 4.5 Css framework.
+
+### Libraries & Packages Used
+
+[W3 Schools html](https://www.w3schools.com/html/default.asp)
+[W3 Schools css](https://www.w3schools.com/css/default.asp)
+
+
+### Programs Used
+
+[Codeanywhere] - Online code editor.
+
+[Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+[Github](https://github.com/) - To save and store the files for the website.
+
+[Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
+[Font Awesome](https://fontawesome.com/)  - For the icons on the website.
+
+[Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
+
+[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
+- - - 
+
+## Deployment & Local Development
+
+### Deployment
+
+The project was developed using Codeanywhere cloud IDE and pushed to GitHub using the inbuilt command line. To deploy to GitHub Pages from the [Github repository](https://github.com/al-ell/al-ell.github.io/tree/main) follow these steps:
+
+    1. Log in to [GitHub]()
+    2. Go to the [repository page](https://github.com/al-ell/al-ell.github.io/tree/main)
+    3. Change the name of the respository to "username.github.io" : al-ell.github.io
+    4. From the menu above the repository menu select __settings__
+    5. On the left select __pages__ 
+    6. Under __source__ select __deploy from a branch__
+    7. Go to "username.github.io" : al-ell.github.io
+
+
+
+### Local Development
+
+#### How to Fork
+
+    1. On GitHub.com, navigate to the octocat/Spoon-Knife repository
+    2. In the top-right corner of the page, click __Fork__
+    3. Under "Owner," select the dropdown menu and click an owner for the forked repository
+    4. By default, forks are named the same as their upstream repositories. Optionally, to further distinguish your fork, in the "Repository name" field, type a name
+    5. Optionally, in the "Description" field, type a description of your fork
+    6. Optionally, select __Copy the DEFAULT branch only__
+    7. Click __Create fork__   
+
+#### How to Clone
+
+    1. On GitHub.com, navigate to the main page of the repository
+    2. Above the list of files, click __<> Code__
+    3. Copy the URL for the repository
+        * To clone the repository using HTTPS, under "HTTPS", click __clipboard icon__
+        * To clone the repository using an SSH key, including a certificate issued by your organization's SSH certificate authority, click SSH, then click __clipboard icon__
+        * To clone a repository using GitHub CLI, click GitHub CLI, then click __copy icon__
+    4. Open Terminal, change the current working directory to the location where you want the cloned directory
+    5. Type 'git clone', and then paste the URL copied earlier
+    6. Press __Enter__ to create your local clone
+
+- - -
+
+## Testing
+
+Please see [TESTING.md](TESTING.md) for all testing performed
+- - -
+
+## Credits
+
+### Code Used
+
+
+All instances of Tutor support and fixes found online are documented as comments in the code.
+
+##### Gallery Page
+
+[Responsive Gallery Tutorial](https://blog.logrocket.com/responsive-image-gallery-css-flexbox/)
+[Responsive Gallery Source Code](https://codesandbox.io/s/delicate-wave-sts6l7?file=/index.html:313-2227)
+To create the gallery page I followed the above tutorial to make the responsive gallery page. Doing this helped me to learn more about how flexbox works. After this I went to make the history page.
+
+##### History Page
+
+[Youtube Flexbox Tutorial](https://www.youtube.com/watch?v=Y8zMYaD1bz0)
+I used the tutorial playlist above to make a flexbox grid layout that becomes a stack for a smaller resolution.
+
+##### Live Page
+
+[Youtube timeline tutorial](https://www.youtube.com/watch?v=TcYSRI1JFQE&t=6s)
+I used the timeline and knowlege gained during the Resume project to make the timeline for the tour dates. 
+
+
+##### Bootstrap Components  
+
+* Bootstrap Grid and flexbox used across all pages
+
+* Alert
+* Buttons
+* Navbar
+* Modal
+* Form
+
+### Content
+
+Content for this project was written by Alice Elliott.
+
+### Media
+
+* Homepage Image for larger screen resolutions [street-homeimage](https://www.pexels.com/photo/two-men-and-woman-sitting-next-to-each-other-2479312/)
+
+* Homepage Image for smaller screen resolutions/Image for gallery [street2](https://www.pexels.com/photo/man-playing-guitar-beside-woman-and-man-listening-to-him-2479320/)
+
+* Image for gallery [street3](https://www.pexels.com/photo/man-playing-guitar-on-street-2479323/)
+
+* Image for gallery [trumpet](https://www.pexels.com/photo/people-performing-on-stage-442540/)
+
+* Image for gallery [guitar](https://www.pexels.com/photo/two-men-and-woman-sitting-next-to-each-other-2479312/)
+
+* Image for gallery [outdoor-concert](https://www.pexels.com/photo/man-playing-a-saxophone-16803242/)
+
+* Image for gallery [outdoor-concert2](https://www.pexels.com/photo/    man-and-woman-dancing-while-man-in-black-clothes-playing-the-saxophone-on-the-roof-top-7502577/)
+
+* Image for gallery [drums-studio](https://www.pexels.com/photo/man-in-black-jacket-playing-drum-5650907/)
+
+* Image for gallery [garden-stage](https://www.pexels.com/photo/a-band-playing-music-in-a-park-in-summer-16803238/)
+
+* Image for gallery [closeup-guitar](https://www.pexels.com/photo/close-up-of-a-man-playing-an-electric-guitar-8133318/)
+
+* Image for history [history1](https://www.pexels.com/search/stage%20and%20tables/)
+
+* Image for history [history2](https://www.pexels.com/photo/16844655/)
+
+* Image for history [band-practice](https://www.pexels.com/photo/16844655/)
+
+* Image for history [festival-stage](https://www.pexels.com/search/festival%20stage/)
+
+* Video for history [youtube-video](https://youtu.be/wPRwhu7WKp4)
+
+* Video for live [youtube-video](https://www.youtube.com/watch?v=St7G1F4mu_4&t=3s)
+
+* Device mark up creator [markup maker](https://techsini.com/multi-mockup/index.php)

@@ -24,6 +24,7 @@ h2,
 h3 {
     font-family: var(--secondary-font);
     color: var(--secondary-color);
+    background-color: var(--tertiary-color);
 }
 
 p {
@@ -31,37 +32,127 @@ p {
     color: var(--secondary-color);
 }
 
+a {
+    color: white;
+}
+
 /* Navbar */
 
 #navbar {
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
+}
+
+.navbar-brand,
+.nav-link,
+.navbar-nav {
     color: var(--secondary-color);
     font-family: var(--secondary-font);
 }
 
-#navbar .logo {
-    width: 30px;
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.nav-nav .hover {
+    color: var(--primary-color);
+}
+
+.navbar-brand {
+    font-size: 3em;
 }
 
 /* Hero Image */
 
+#hero-image {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#hero-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#hero-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--tertiary-color);
+}
+
+/* About */
+
+#about {
+    padding-bottom: 3%;
+}
+
+/* Menu & Book Images */
+
+#menu-image,
+#book-image {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#menu-image img,
+#book-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#menu-image h1,
+#book-image h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--tertiary-color);
+}
+
+/* Menu */
+
+#menu {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+/* Gallery */
+
+#gallery {
+    position: relative;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#gallery img {
+    height: 100%;
+    object-fit: contain;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
 
-/* About Section */
+/* Booking Form */
 
+#booking-form {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
 
+#booking-form button {
+    padding: .5rem .75rem;
+    color: var(--secondary-color);
+    background-color: var(--tertiary-color);
+}
 
-/* Carousel */
-
-
-
-/* Menu Image */
-
-
-
-/* Book Image */
-
-
+.form-label {
+    color: var(--secondary-color)
+}
 
 
 
@@ -70,6 +161,8 @@ p {
 #contact {
     background-color: var(--tertiary-color);
     font-family: var(--primary-font);
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 #contact p {

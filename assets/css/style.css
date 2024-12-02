@@ -43,12 +43,33 @@ p {
     width: 30px;
 }
 
+/* Hero Image */
+
+
+
+/* About Section */
+
+
+
+/* Carousel */
+
+
+
+/* Menu Image */
+
+
+
+/* Book Image */
+
+
+
+
+
 /* Footer */
 
 #contact {
     background-color: var(--tertiary-color);
     font-family: var(--primary-font);
-    border: 1rem;
 }
 
 #contact p {

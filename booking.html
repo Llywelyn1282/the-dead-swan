@@ -51,40 +51,40 @@
       <img src="assets/images/asian-food-3.webp" alt="Close-up image of a plate of Asian food.">
       <h1> request a table </h1>
     </div>
-
+<div class="container text-center"><p>It is always advisable to book ahead here at The Dead Swan to avoid disappointment.<br> Please send us a booking enquiry below and we will get back to you as soon as possible.</p></div>
     <!-- Booking Form -->
     <form action="booking-request-received.html" method="GET">
       <div id="booking-form" class="container">
         <div class="row">
           <div class="mb-3 col-6">
             <label for="form-first-name" class="form-label">First Name</label>
-            <input type="text" class="form-control" id="form-first-name" placeholder="John" required>
+            <input type="text" name="first-name" class="form-control" id="form-first-name" placeholder="John" required>
           </div>
           <div class="mb-3 col-6">
             <label for="form-last-name" class="form-label">Last Name</label>
-            <input type="text" class="form-control" id="form-last-name" placeholder="Smith" required>
+            <input type="text" name="last-name" class="form-control" id="form-last-name" placeholder="Smith" required>
           </div>
           <div class="mb-3 col-6">
             <label for="form-phone-number" class="form-label">Phone Number</label>
-            <input type="number" class="form-control" id="form-phone-number" placeholder="12345678912" required>
+            <input type="number" name="phone-number" class="form-control" id="form-phone-number" placeholder="12345678912" required>
           </div>
           <div class="mb-3 col-6">
             <label for="form-email-address" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="form-email-address" placeholder="name@example.com" required>
+            <input type="email" name="email-address" class="form-control" id="form-email-address" placeholder="name@example.com" required>
           </div>
           <div class="mb-3 col-6">
             <label for="form-party-number" class="form-label">Party Number</label>
-            <input type="number" class="form-control" id="form-party-number" placeholder="4" required>
+            <input type="number" name="party-number" class="form-control" id="form-party-number" placeholder="4" required>
           </div>
           <div class="mb-3 col-6">
             <label for="form-desired-time" class="form-label">Desired Time</label>
-            <input type="text" class="form-control" id="form-desired-time" placeholder="7.30pm" required>
+            <input type="number" name="desired-time" class="form-control" id="form-desired-time" placeholder="7.30pm" required>
           </div>
           <div class="mb-3 col-12">
             <label for="form-message" class="form-label">Message</label>
-            <textarea class="form-control" id="form-message" rows="3"></textarea>
+            <textarea class="form-control" name="message" id="form-message" rows="3"></textarea>
           </div>
-          <div class="col-12">
+          <div class="col-12 text-center">
             <input type="submit" value="Submit">
           </div>
         </div>

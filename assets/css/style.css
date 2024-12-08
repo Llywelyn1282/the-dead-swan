@@ -9,8 +9,8 @@
     /* off-white */
     --tertiary-color: #3C3D37;
     /* dark gray */
-    --hightlight-color: #697565;
-    /* light gray */
+    --hightlight-color: white;
+    /* white */
 }
 
 /* Global Styles */
@@ -37,7 +37,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: var(--hightlight-color);
 }
 
 
@@ -70,11 +70,11 @@ a:hover {
 }
 
 a.nav-link:hover {
-    color: white;
+    color: var(--hightlight-color);
 }
 
 a.navbar-brand:hover {
-    color: white;
+    color: var(--hightlight-color);
 }
 
 /* Hero Image */
@@ -82,8 +82,8 @@ a.navbar-brand:hover {
 #hero-image {
     position: relative;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #hero-image img {
@@ -98,12 +98,13 @@ a.navbar-brand:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--tertiary-color);
+    padding: 1rem;
 }
 
 /* About */
 
 #about {
-    padding-bottom: 3%;
+    padding-bottom: 2%;
 }
 
 /* Menu & Book Images */
@@ -112,8 +113,8 @@ a.navbar-brand:hover {
 #book-image {
     position: relative;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #menu-image img,
@@ -130,37 +131,38 @@ a.navbar-brand:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: var(--tertiary-color);
-    padding: 0 2rem;
+    padding: 0 1rem;
 }
 
 /* Menu */
 
 #menu {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
+
 
 /* Gallery */
 
 #gallery {
     position: relative;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #gallery img {
     height: 100%;
     width: 100%;
     object-fit: contain;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 /* Booking Form */
 
 #booking-form {
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 #booking-form button {
@@ -175,13 +177,18 @@ a.navbar-brand:hover {
 
 /* Booking Request Received */
 
+#booking-request-container {
+    display: flex;
+    justify-content: center;
+}
+
 #booking-request {
     display: flex;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     margin: 1rem 1rem;
-    width: 30%;
+    width: 100%;
     background-color: var(--tertiary-color);
 }
 
@@ -272,5 +279,8 @@ a.navbar-brand:hover {
         justify-content: center;
         text-align: right;
     }
-}
+
+    #booking-request {
+        width: 30%;
+    }
 }

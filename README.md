@@ -22,7 +22,7 @@ Link to deployed site:
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [Elements Fount on Each Page](#elements-found-on-each-page)
+  * [Elements Found on Each Page](#elements-found-on-each-page)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 

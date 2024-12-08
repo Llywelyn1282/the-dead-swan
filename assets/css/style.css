@@ -33,8 +33,13 @@ p {
 }
 
 a {
+    color: var(--secondary-color);
+}
+
+a:hover {
     color: white;
 }
+
 
 /* Navbar */
 
@@ -60,16 +65,16 @@ a {
 }
 
 .navbar button {
-    color:var(--secondary-color);
-    background-color:var(--secondary-color);
+    color: var(--secondary-color);
+    background-color: var(--secondary-color);
 }
 
 a.nav-link:hover {
-    color: var(white);
+    color: white;
 }
 
 a.navbar-brand:hover {
-color: var(white);
+    color: white;
 }
 
 /* Hero Image */
@@ -168,37 +173,104 @@ color: var(white);
     color: var(--secondary-color)
 }
 
+/* Booking Request Received */
 
+#booking-request {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem 1rem;
+    width: 30%;
+    background-color: var(--tertiary-color);
+}
+
+#request-image {
+    position: relative;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+#request-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+#request-image h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--tertiary-color);
+    padding: 0 1rem; }
 
 /* Footer */
 
 #footer {
     background-color: var(--tertiary-color);
     font-family: var(--primary-font);
+    color: var(--secondary-color);
     padding-top: 1%;
     padding-bottom: 1%;
 }
 
-#social-links {
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-#opening-times {
-    justify-content: end;
+#social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
 }
 
-#contact p {
-    font-family: var(--primary-font);
-}
+@media only screen and (min-width: 800px) {
+    .flex-container {
+        flex-direction: row;
+    }
 
-.address {
-    color: var(--secondary-color);
-}
+    .box {
+        width: 33%;
+    }
 
-.table>:not(caption)>*>* {
-    padding: .5rem .5rem;
-    color: var(--secondary-color);
-    background-color: transparent;
-    border-bottom-width: var(--bs-border-width);
-    box-shadow: inset 0 0 0 9999px var(--bs-table-bg-state, var(--bs-table-bg-type, var(--bs-table-accent-bg)));
+    #contact {
+        display: flex;
+        align-items: start;
+        text-align: left;
+    }
+
+    #social-links {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    #opening-times {
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: stretch;
+        justify-content: center;
+        text-align: right;
+    }
+}
 }

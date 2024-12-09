@@ -89,27 +89,31 @@ As an administrator for the site I want to be able to:
 
 ### Colour Scheme
 
+![Colour Scheme for The Dead Swan](/documentation/color-palette.png)
 
 ### Typography
 
 I used Google Fonts to import the following fonts for use in the site:
 
-##### Logo 
+##### Logo & Headings 
 
+[Bokor](https://fonts.google.com/specimen/Bokor)
 
-##### Headings 
+![Sample](/documentation/bokor.png)
 
 ##### Paragraphs 
 
+[Inter](https://fonts.google.com/specimen/Inter)
+
+![Sample](/documentation/inter.png)
 
 ##### Icons 
-[Font Awesome](https://fontawesome.com/icons)
-Icons are a good way to add accessability features to a website 
 
+[Font Awesome](https://fontawesome.com/icons)
 
 ### Imagery
 
-
+Favicon generated using [favicon.io](https://favicon.io/) ![Favicon](/assets/images/apple-touch-icon.png)
 
 ### Wireframes
 
@@ -117,43 +121,42 @@ Wireframes were created for mobile and desktop using Balsamiq.
 
 #### __Home Page__
 
-![Home Page](/documentation/wireframes/wireframehomepage.png)
+![Home Page](/documentation/wireframe-home.png)
 
-#### __Contact Modal__
+#### __Menu Page__
 
-![]](/documentation/wireframes/wireframecontactus.png)
+![Menu Page](/documentation/wireframe-menu.png)
 
 #### __Gallery Page__
 
-![Login Page](/documentation/wireframes/wireframegallery.png)
+![Gallery Page](/documentation/wireframe-gallery.png)
 
-#### __History Page__
+#### __Booking Page__
 
-![Profile Page](/documentation/wireframes/wireframehistory.png)
+![Booking Page](/documentation/wireframe-booking.png)
 
-#### __Live Page__
+#### __Booking Request Received Page__
 
-![Live Page](/documentation/wireframes/wireframelivedates.png)
+![Booking Request Received Page](/documentation/wireframe-booking-request-received.png)
 
- -----
+
 
 
 ## Features
 
-The website is comprised of 4 pages and a modal which are extended from a base template.
+The website is comprised of 5 pages:
 
-* Home page
-* Gallery page
-* History page
-* Live page
-
-* Contact form modal
+* Home Page
+* Menu Page
+* Gallery Page
+* Booking Page
+* Booking Request Received Page
 
 
 ### Elements found on each page
 
 
-* Navbar - The Navbar is displayed on all pages of the website, it allows users to navigate the site with ease. The navbar is comprised of a logo, and links to navigate within the site and a search bar. It has a text-colour indicator to show the current page.
+* Navbar -
 
   __Navbar__
   
@@ -161,16 +164,11 @@ The website is comprised of 4 pages and a modal which are extended from a base t
   
   ![Navbar](/documentation/manual-testing/homepage-nav.png)
 
-  __Nav-button__
-
-* Flex wrap reverse used to get nav button to toggle and logo to sit below for smaller screen resolutions. 
-
-    ![Nav-button-toggler](/documentation/manual-testing/mobile-nav-toggler.png)
-
 
   __Footer__
 
-* Footer containing the modal button and external social media icons links is displayed on all pages of the website. d-none used to hide watch link for smaller devices.
+* Footer containing contact information, social media links and opening times for the business is displayed on all pages of the website. 
+
   ![Footer](/documentation/manual-testing/homepage-footer.png)
 
 - - -
@@ -183,19 +181,19 @@ The website is comprised of 4 pages and a modal which are extended from a base t
 
 ![Home Page](/documentation/manual-testing/tablet-index.png)
 
+### History Page
+
+![Menu Page](/documentation/manual-testing/desktop-history.png)
+
 ### Gallery Page
 
 ![Gallery Page](/documentation/manual-testing/desktop-gallery.png)
 
-### History Page
+### Booking Page
 
-![History Page](/documentation/manual-testing/desktop-history.png)
+![Booking Page](/documentation/manual-testing/desktop-live.png)
 
-### Live Page
-
-![Live Page](/documentation/manual-testing/desktop-live.png)
-
-### Contact Form Modal
+### Booking Request Received Page
 
 ![Contact Form Modal](/documentation/manual-testing/desktop-modal.png)
 
@@ -205,19 +203,14 @@ The website is comprised of 4 pages and a modal which are extended from a base t
 
 In future implementations I would like to:
 
-* Create a ticket booking system/allow users to boy tickets on the website.
-* Create an online shop selling merchandise.
-* Add a sign up link for a mailing list.
-* Add a blog documenting tour journey.
-* Add a live instagram or twitter feed.
-* Add an audio player with user controls to the gallery page.
+* 
 
 ### Accessibility
 
 I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been achieved by:
 
 * Using semantic HTML.
-* Using descriptive alt attributes and titles for images and video on the site.
+* Using descriptive alt attributes and titles for images on the site.
 * Providing information for screen readers where there are icons used and no text.
 * Adding "current" to navigation for screen reader to inform of page being accessed.
 * Ensuring that there is a sufficient colour contrast throughout the site.
@@ -232,22 +225,17 @@ HTML, CSS.
 
 ### Databases Used
 
-[css flexbox guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
-
 
 ### Frameworks Used
 
-[Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - V 4.5 Css framework.
+[Bootstrap]()
 
 ### Libraries & Packages Used
 
 [W3 Schools html](https://www.w3schools.com/html/default.asp)
 [W3 Schools css](https://www.w3schools.com/css/default.asp)
 
-
 ### Programs Used
-
-[Codeanywhere] - Online code editor.
 
 [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
 
@@ -346,7 +334,7 @@ I used the timeline and knowlege gained during the Resume project to make the ti
 
 ### Content
 
-Content for this project was written by Alice Elliott.
+Content for this project was written by Gwilym Llywelyn.
 
 ### Media
 

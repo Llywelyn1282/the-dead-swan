@@ -23,7 +23,6 @@ https://llywelyn1282.github.io/the-dead-swan/index.html
 * [Features](#features)
   * [Elements Found on Each Page](#elements-found-on-each-page)
   * [Future Implementations](#future-implementations)
-  * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
   * [Languages Used](#languages-used)
@@ -31,20 +30,20 @@ https://llywelyn1282.github.io/the-dead-swan/index.html
   * [Frameworks Used](#frameworks-used)
   * [Libraries & Packages Used](#libraries--packages-used)
   * [Programs Used](#programs-used)
-    * [Google Books API](#google-books-api)
-    * [Flask Blueprints](#flask-blueprints)
-    * [Flask Migrate](#flask-migrate)
-    * [Error Handling](#error-handling)
-    * [Defensive Programming](#defensive-programming)
-    * [Database Migration to ElephantSQL](#database-migration-to-elephantsql)
+
+* [Testing](#testing)
+  * [Responsiveness](#responsiveness)
+  * [Accesibility](#accessibility)
+  * [Lighthouse Testing](#lighthouse-testing)
+  * [Functional Testing](#functional-testing)
+  * [Validator Testing](#validator-testing)
+  * [Unfixed Bugs](#unfixed-bugs)
+
 
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
     * [How to Clone](#how-to-clone)
-
-* [Testing](#testing)
   
 * [Credits](#credits)
   * [Code Used](#code-used)
@@ -236,11 +235,13 @@ CSS
 
 [Adobe Express](https://www.adobe.com/uk/products/firefly/features/text-to-image.html) - Text to Image AI Generator to create images for the site.
 
+[Tiny JPG](https://tinyjpg.com/) - To resize the website images.
+
 [Font Awesome](https://fontawesome.com/)  - For the icons on the website.
 
 [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
-[Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+[Am I Responsive?](http://ami.responsivedesign.is/) - To show the website image on a range of devices.
 
 - - - 
 
@@ -292,11 +293,30 @@ Testing was focused to ensure the following criteria were met:
 
 ### Lighthouse Testing
 
-![Home](docs/testing/index_lighthouse.JPG)
+#### __Home Page__
 
-![Gallery](docs/testing/gallery_lighthouse.JPG)
+![Home](documentation/index-lighthouse.png)
 
-![Adventures](docs/testing/adventures_lighthouse.JPG)
+#### __Menu Page__
+
+![Menu](documentation/menu-lighthouse.png)
+
+#### __Gallery Page__
+
+![Gallery](documentation/gallery-lighthouse.png)
+
+#### __Booking Page__
+
+![Booking](documentation/booking-lighthouse.png)
+
+#### __Booking Request Received Page__
+
+![Booking Request Received](documentation/booking-request-received-lighthouse.png)
+
+#### __404 Page__
+
+![404](documentation/404-lighthouse.png)
+
 
 ### Functional Testing
 
@@ -304,13 +324,22 @@ Testing was focused to ensure the following criteria were met:
 
 Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
 
-| Navigation Link | Page to Load    |
-| --------------- | --------------- |
-| Home            | index.html      |
-| Aventures       | adventures.html |
-| Gallery         | gallery.html    |
+| Navigation Link | Page to Load        |
+| --------------- | ---------------     |
+| Home            | index.html          |
+| About           | index.html#about    |
+| Menu            | menu.html           |
+| Gallery         | gallery.html        |
+| Booking         | booking.html        |
+| Contact         | index.html#booking  |
 
 Links on all pages navigated to the correct pages as exptected.
+
+**Page Links**
+
+- Call to action links on index.html titled "see our menu" and "book a table" both navigated to menu.html and booking.html respecitively.
+- Links to social media on gallery.html both functioning correctly and directing to Instagram and Facebook homepages as placeholders.
+- The "back to homepage" link on both booking-request-received.html and 404.html is working correctly.
 
 **Form Testing**
 
@@ -320,18 +349,19 @@ _Scenario One - Correct Inputs_
 
 Steps to test:
 
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
 2. Scroll down to the form and input the following data:
    - First Name: John
-   - Last Name: Doe
-   - Email: doe.john@test.com
-   - Comment: This is a test.
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
 3. Click Submit
-4. User should be redirected to contact.html confirmation page
+4. User should be redirected to booking-request-received.html confirmation page
 
 Expected:
 
-Form submits with no warnings or errors and user is redirected to contact.html confirmation page.
+Form submits with no warnings or errors and user is redirected to booking-request-received.html confirmation page.
 
 Actual:
 
@@ -341,142 +371,57 @@ _Scenario Two - Missing Required Field First Name_
 
 Steps to test:
 
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Scroll down to the form and input the following data:
-   - First Name:
-   - Last Name: Doe
-   - Email: doe.john@test.com
-   - Comment: This is a test.
-3. Click Submit
-
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that the field is required.
-
-Actual:
-
-Website behaved as expected, error message was displayed and the form did not submit.
 
 _Scenario Three - Missing Required Field Last Name_
 
 Steps to test:
 
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Scroll down to the form and input the following data:
-   - First Name:John
-   - Last Name:
-   - Email: doe.john@test.com
-   - Comment: This is a test.
-3. Click Submit
-
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that the field is required.
-
-Actual:
-
-Website behaved as expected, error message was displayed and the form did not submit.
-
-_Scenario Four - Missing Required Field Email_
+_Scenario Four - Missing Required Field Phone Number_
 
 Steps to test:
 
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Scroll down to the form and input the following data:
-   - First Name:John
-   - Last Name: Doe
-   - Email:
-   - Comment: This is a test.
-3. Click Submit
+_Scenario Five - Missing Required Field Email_
 
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that the field is required.
-
-Actual:
-
-Website behaved as expected, error message was displayed and the form did not submit.
+Steps to test:
 
 _Scenario Six - Incorrect email format_
 
 Steps to test:
 
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Scroll down to the form and input the following data:
-   - First Name:John
-   - Last Name: Doe
-   - Email: doe.johntest.com
-   - Comment: This is a test.
-3. Click Submit
+_Scenario Seven - Missing Required Field Party Number_
 
-Expected:
-
-The form does not submit and an Error is displayed to tell the user that a valid email is required and the format it should be in.
-
-Actual:
-
-Website behaved as expected, error message was displayed and the form did not submit.
+Steps to test:
 
 **Footer Social Media Icons / Links**
 
-Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab and that each one had a hover affect of the orange branding color.
 
-Each item opened a new tab when clicked as expected and correct hover color was present.
 
 **Footer Contact Information**
 
-Testing was performed on the phone number in the contact information section of the footer to ensure behaviour was as expected.
 
-_Steps to test Telephone Number_
-
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Click the phone number in the footer (01 123 456 789)
-
-Expected:
-
-A window is opened asking which device you would like to call from.
-
-Actual:
-
-Behavior was as expected and the window presented me with the following option to call:
-
-- Oukitel Mobile Phone
-
-_Steps to test Email Link_
-
-1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
-2. Click the email address in the footer (taco@gmail.com)
-
-Expected:
-
-A windows popup is displayed asking what application you would like to send a mail from or your default email application is opened.
-
-Actual:
-
-Behavior was as expected and my outlook application was opened ready to send an email to the target address.
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+HTML
+  - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org)
+  ![Index HTML Validator Results]()
+  
+  ![Menu HTML Validator Results]()
 
-![Contact HTML Validator Results](docs/testing/contact_validator.JPG)
+  ![Gallery HTML Validator Results]()
 
-![Avdentures HTML Validator Results](docs/testing/adventures_validator.JPG)
+  ![Booking HTML Validator Results]()
 
-![Home HTML Validator Results](docs/testing/home_validator.JPG)
+  ![Booking Request Received HTML Validator Results]()
+  
+  ![404 HTML Validator Results]()
 
-![Gallery HTML Validator Results](docs/testing/gallery_validator.JPG)
-
-![404 HTML Validator Results](docs/testing/404_validator.JPG)
-
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
-
-![CSS Validator Results](docs/testing/css_validator.JPG)
+CSS
+  - No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org)
+  ![CSS Validator Results](documentation/css-validation.png)
 
 ### Unfixed Bugs
-Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation on mozilla firefox. I was unable to resolve this bug on time but will address in a future release.
+
 
 
 - - -

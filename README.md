@@ -1,12 +1,11 @@
 # The Dead Swan
 
-![Welcome to The Dead Swan](/documentation/multi-device-mockup.png) 
-
-
 The Dead Swan was created as my first milestone project for the Code Institutes Level 5 Diploma in Web Application Development.
 
 Link to deployed site: 
+https://llywelyn1282.github.io/the-dead-swan/index.html
 
+![Welcome to The Dead Swan](/documentation/mockup.png) 
 
 
 ## CONTENTS
@@ -83,7 +82,9 @@ As a returning registered user of the site I want to be able to:
 As an administrator for the site I want to be able to:
 
 * 
+
 - - -
+
 
 ## Design
 
@@ -109,11 +110,15 @@ I used Google Fonts to import the following fonts for use in the site:
 
 ##### Icons 
 
-[Font Awesome](https://fontawesome.com/icons)
+Icons were used from [Font Awesome](https://fontawesome.com/icons)
 
 ### Imagery
 
-Favicon generated using [favicon.io](https://favicon.io/) ![Favicon](/assets/images/apple-touch-icon.png)
+Favicon generated using [favicon.io](https://favicon.io/) 
+
+![Favicon](/documentation/favicon-image.png)
+
+
 
 ### Wireframes
 
@@ -141,7 +146,6 @@ Wireframes were created for mobile and desktop using Balsamiq.
 
 
 
-
 ## Features
 
 The website is comprised of 5 pages:
@@ -153,51 +157,46 @@ The website is comprised of 5 pages:
 * Booking Request Received Page
 
 
-### Elements found on each page
+### Site Wide
 
-
-* Navbar -
-
-  __Navbar__
+__Navbar__
   
 * Bootstrap navbar styled to have right sided margin.
   
-  ![Navbar](/documentation/manual-testing/homepage-nav.png)
+  ![Navbar](/documentation/navbar.png)
 
 
-  __Footer__
+__Footer__
 
 * Footer containing contact information, social media links and opening times for the business is displayed on all pages of the website. 
 
-  ![Footer](/documentation/manual-testing/homepage-footer.png)
-
-- - -
+  ![Footer](/documentation/footer.png)
 
 ### Home Page
 
-![Home Page](/documentation/manual-testing/desktop-index.png)
-
-![Home Page](/documentation/manual-testing/mobile-index.png)
-
-![Home Page](/documentation/manual-testing/tablet-index.png)
+![Home Page](/documentation/home-page.png)
 
 ### Menu Page
 
-![Menu Page](/documentation/manual-testing/desktop-history.png)
+![Menu Page](/documentation/menu-1.png)
+
+![Menu Page](/documentation/menu-2.png)
 
 ### Gallery Page
 
-![Gallery Page](/documentation/manual-testing/desktop-gallery.png)
+![Gallery Page](/documentation/gallery.png)
 
 ### Booking Page
 
-![Booking Page](/documentation/manual-testing/desktop-live.png)
+![Booking Page](/documentation/booking-form.png)
 
 ### Booking Request Received Page
 
-![Booking Request Received Page](/documentation/manual-testing/desktop-modal.png)
+![Booking Request Received Page](/documentation/booking-request-received.png)
 
-- - -
+### 404 Error Page
+
+![404 Error Page](/documentation/404.png)
 
 ### Future Implementations
 
@@ -205,35 +204,25 @@ In future implementations I would like to:
 
 * 
 
-### Accessibility
-
-I have been mindful during coding to ensure that the website is as accessible friendly as possible. This has been achieved by:
-
-* Using semantic HTML.
-* Using descriptive alt attributes and titles for images on the site.
-* Providing information for screen readers where there are icons used and no text.
-* Adding "current" to navigation for screen reader to inform of page being accessed.
-* Ensuring that there is a sufficient colour contrast throughout the site.
 
 - - -
+
 
 ## Technologies Used
 
 ### Languages Used
 
-HTML, CSS.
+HTML
+   
+ * The structure of the Website was developed using HTML as the main language.
 
-### Databases Used
-
+CSS
+   
+ * The Website was styled using custom CSS in an external file.
 
 ### Frameworks Used
 
-[Bootstrap]()
-
-### Libraries & Packages Used
-
-[W3 Schools html](https://www.w3schools.com/html/default.asp)
-[W3 Schools css](https://www.w3schools.com/css/default.asp)
+[Bootstrap](https://getbootstrap.com/)
 
 ### Programs Used
 
@@ -243,6 +232,10 @@ HTML, CSS.
 
 [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
 
+[Favicon.io](https://favicon.io/favicon-converter/) - To create the favicon files.
+
+[Adobe Express](https://www.adobe.com/uk/products/firefly/features/text-to-image.html) - Text to Image AI Generator to create images for the site.
+
 [Font Awesome](https://fontawesome.com/)  - For the icons on the website.
 
 [Google Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - To troubleshoot and test features, solve issues with responsiveness and styling.
@@ -251,29 +244,286 @@ HTML, CSS.
 
 - - - 
 
+## Testing
+
+### Responsiveness
+
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in [WCAG 2.1 Reflow criteria for responsive design](https://www.w3.org/WAI/WCAG21/Understanding/reflow.html) on Chrome, Edge, Firefox and Opera browsers.
+
+Steps to test:
+
+1. Open browser and navigate to [The Dead Swan](https://llywelyn1282.github.io/the-dead-swan/index.html)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+No horizontal scroll is present.
+No elements overlap.
+
+Actual:
+
+Website behaved as expected.
+
+Website was also opened on the following devices and no responsive issues were seen:
+
+- Huawei P20 Pro
+- iPad Pro
+- Lenovo Ideapad S540
+
+### Accessibility
+
+Wave Accessibility tool was used throughout development and for final testing of the deployed website to check for any aid accessibility testing.
+
+Testing was focused to ensure the following criteria were met:
+
+- All forms have associated labels or aria-labels so that this is read out on a screen reader to users who tab to form inputs
+- Color contrasts meet a minimum ratio as specified in WCAG 2.1 Contrast Guidelines
+- Heading levels are not missed or skipped to ensure the importance of content is relayed correctly to the end user
+- All content is contained within landmarks to ensure ease of use for assistive technology, allowing the user to navigate by page regions
+- All not textual content had alternative text or titles so descriptions are read out to screen readers
+- HTML page lang attribute has been set
+- Aria properties have been implemented correctly
+- WCAG 2.1 Coding best practices being followed
+- Manual tests were also performed to ensure the website was accessible as possible and an accessibility issue was identified.
+
+### Lighthouse Testing
+
+![Home](docs/testing/index_lighthouse.JPG)
+
+![Gallery](docs/testing/gallery_lighthouse.JPG)
+
+![Adventures](docs/testing/adventures_lighthouse.JPG)
+
+### Functional Testing
+
+**Navigation Links**
+
+Testing was performed to ensure all navigation links on the respective pages, navigated to the correct pages as per design. This was done by clicking on the navigation links on each page.
+
+| Navigation Link | Page to Load    |
+| --------------- | --------------- |
+| Home            | index.html      |
+| Aventures       | adventures.html |
+| Gallery         | gallery.html    |
+
+Links on all pages navigated to the correct pages as exptected.
+
+**Form Testing**
+
+The form on the home page was tested to ensure it functioned as expected when correct data was input and when incorrect data was input. The following test scenarios were covered:
+
+_Scenario One - Correct Inputs_
+
+Steps to test:
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Doe
+   - Email: doe.john@test.com
+   - Comment: This is a test.
+3. Click Submit
+4. User should be redirected to contact.html confirmation page
+
+Expected:
+
+Form submits with no warnings or errors and user is redirected to contact.html confirmation page.
+
+Actual:
+
+Website behaved as expected with no errors or warnings and redirected to contact.html.
+
+_Scenario Two - Missing Required Field First Name_
+
+Steps to test:
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Scroll down to the form and input the following data:
+   - First Name:
+   - Last Name: Doe
+   - Email: doe.john@test.com
+   - Comment: This is a test.
+3. Click Submit
+
+Expected:
+
+The form does not submit and an Error is displayed to tell the user that the field is required.
+
+Actual:
+
+Website behaved as expected, error message was displayed and the form did not submit.
+
+_Scenario Three - Missing Required Field Last Name_
+
+Steps to test:
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Scroll down to the form and input the following data:
+   - First Name:John
+   - Last Name:
+   - Email: doe.john@test.com
+   - Comment: This is a test.
+3. Click Submit
+
+Expected:
+
+The form does not submit and an Error is displayed to tell the user that the field is required.
+
+Actual:
+
+Website behaved as expected, error message was displayed and the form did not submit.
+
+_Scenario Four - Missing Required Field Email_
+
+Steps to test:
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Scroll down to the form and input the following data:
+   - First Name:John
+   - Last Name: Doe
+   - Email:
+   - Comment: This is a test.
+3. Click Submit
+
+Expected:
+
+The form does not submit and an Error is displayed to tell the user that the field is required.
+
+Actual:
+
+Website behaved as expected, error message was displayed and the form did not submit.
+
+_Scenario Six - Incorrect email format_
+
+Steps to test:
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Scroll down to the form and input the following data:
+   - First Name:John
+   - Last Name: Doe
+   - Email: doe.johntest.com
+   - Comment: This is a test.
+3. Click Submit
+
+Expected:
+
+The form does not submit and an Error is displayed to tell the user that a valid email is required and the format it should be in.
+
+Actual:
+
+Website behaved as expected, error message was displayed and the form did not submit.
+
+**Footer Social Media Icons / Links**
+
+Testing was performed on the Font Awesome Social Media icons in the footer to ensure that each one opened in a new tab and that each one had a hover affect of the orange branding color.
+
+Each item opened a new tab when clicked as expected and correct hover color was present.
+
+**Footer Contact Information**
+
+Testing was performed on the phone number in the contact information section of the footer to ensure behaviour was as expected.
+
+_Steps to test Telephone Number_
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Click the phone number in the footer (01 123 456 789)
+
+Expected:
+
+A window is opened asking which device you would like to call from.
+
+Actual:
+
+Behavior was as expected and the window presented me with the following option to call:
+
+- Oukitel Mobile Phone
+
+_Steps to test Email Link_
+
+1. Navigate to [Tacos Travels - Home Page](https://gareth-mcgirr.github.io/tacos-travels/index.html)
+2. Click the email address in the footer (taco@gmail.com)
+
+Expected:
+
+A windows popup is displayed asking what application you would like to send a mail from or your default email application is opened.
+
+Actual:
+
+Behavior was as expected and my outlook application was opened ready to send an email to the target address.
+
+### Validator Testing 
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org)
+
+![Contact HTML Validator Results](docs/testing/contact_validator.JPG)
+
+![Avdentures HTML Validator Results](docs/testing/adventures_validator.JPG)
+
+![Home HTML Validator Results](docs/testing/home_validator.JPG)
+
+![Gallery HTML Validator Results](docs/testing/gallery_validator.JPG)
+
+![404 HTML Validator Results](docs/testing/404_validator.JPG)
+
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org)
+
+![CSS Validator Results](docs/testing/css_validator.JPG)
+
+### Unfixed Bugs
+Responsiveness of the website worked on all devices, screen sizes and orientation with the exception of landscape orientation on mozilla firefox. I was unable to resolve this bug on time but will address in a future release.
+
+
+- - -
+
+
 ## Deployment & Local Development
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m “commit message”``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
 
 ### Deployment
 
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the GitHub repository, navigate to the Settings tab 
+  - From the menu on left select 'Pages'
+  - From the source section drop-down menu, select the Branch: main
+  - Click 'Save'
+  - A live link will be displayed in a green banner when published successfully. 
 
-### Local Development
-
-#### How to Fork
+The live link can be found here - https://llywelyn1282.github.io/the-dead-swan/index.html
 
 #### How to Clone
 
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+
+The project will now of been cloned on your local machine for use.
+
+
 - - -
 
-## Testing
-
-Please see [TESTING.md](TESTING.md) for all testing performed
-- - -
 
 ## Credits
 
 ### Code Used
 
-All instances of Tutor support and fixes found online are documented as comments in the code.
+##### Home Page
 
 ##### Menu Page
 
@@ -283,10 +533,19 @@ All instances of Tutor support and fixes found online are documented as comments
 
 ##### Booking Request Received Page
 
+##### Footer
+
+Flexbox tutorial used for alignment in footer:
+
+https://www.youtube.com/watch?v=2uvyx4YK_rQ&t=2s
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_phoneto
+
+https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto
+
 ##### Bootstrap Components  
 
-* Bootstrap Grid and Flexbox used across all pages:
-
+* Bootstrap Grid and Flexbox used across all pages
 * Navbar
 * Form
 
@@ -296,4 +555,23 @@ Content for this project was written by Gwilym Llywelyn.
 
 ### Media
 
-* 
+Media for this website was created using Adobe Express text to image AI Generator.
+
+* Home Page Hero Image [bar-2](assets/images/bar-2.webp)
+* Home Page Menu Image [asian-food-1](assets/images/asian-food-1.webp)
+* Home Page Booking Image [patrons-5](assets/images/patrons-5.webp)
+* Menu Page Hero Image [asian-food-server-3](assets/images/asian-food-server-3.webp)
+* Booking Page Hero Image [asian-food-3](assets/images/asian-food-3.webp)
+* Gallery Page Image [bar-1](assets/images/bar-1.webp)
+* Gallery Page Image [beer-pumps](assets/images/beer-pumps.webp)
+* Gallery Page Image [band-image-1](assets/images/band-image-1.webp)
+* Gallery Page Image [patrons-2](assets/images/patrons-2.webp)
+* Gallery Page Image [dead-swan](assets/images/dead-swan.webp)
+* Gallery Page Image [asian-food-3](assets/images/asian-food-3.webp)
+* Gallery Page Image [band-image-2](assets/images/band-image-2.webp)
+* Gallery Page Image [patrons-4](assets/images/patrons-4.webp)
+* Gallery Page Image [patrons-3](assets/images/patrons-3.webp)
+* Gallery Page Image [asian-food-server-3](assets/images/asian-food-server-3.webp)
+* Gallery Page Image [welcome-sign](assets/images/welcome-sign.webp)
+* Gallery Page Image [asian-food-server-4](assets/images/asian-food-server-4.webp)
+* Booking Request Received + 404 Image [dead-swan](assets/images/dead-swan.webp)

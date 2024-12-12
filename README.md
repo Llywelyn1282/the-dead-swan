@@ -404,17 +404,18 @@ Steps to test:
 
 HTML
   - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org)
-  ![Index HTML Validator Results]()
   
-  ![Menu HTML Validator Results]()
-
-  ![Gallery HTML Validator Results]()
-
-  ![Booking HTML Validator Results]()
-
-  ![Booking Request Received HTML Validator Results]()
+  ![Index HTML Validator Results](documentation/home-validation.png)
   
-  ![404 HTML Validator Results]()
+  ![Menu HTML Validator Results](documentation/menu-validation.png)
+
+  ![Gallery HTML Validator Results](documentation/gallery-validation.png)
+
+  ![Booking HTML Validator Results](documentation/booking-validation.png)
+
+  ![Booking Request Received HTML Validator Results](documentation/booking-request-received-validation.png)
+
+  ![404 HTML Validator Results](documentation/404-validation.png)
 
 CSS
   - No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org)

@@ -147,13 +147,14 @@ Wireframes were created for mobile and desktop using Balsamiq.
 
 ## Features
 
-The website is comprised of 5 pages:
+The website is comprised of 6 pages:
 
 * Home Page
 * Menu Page
 * Gallery Page
 * Booking Page
 * Booking Request Received Page
+* 404 Page
 
 
 ### Site Wide
@@ -371,34 +372,141 @@ _Scenario Two - Missing Required Field First Name_
 
 Steps to test:
 
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: 
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on First Name field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on First Name field stating "Please fill out this field."
 
 _Scenario Three - Missing Required Field Last Name_
 
 Steps to test:
 
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: 
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on Last Name field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on Last Name field stating "Please fill out this field."
+
 _Scenario Four - Missing Required Field Phone Number_
 
 Steps to test:
+
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Smith
+   - Phone Number: 
+   - Email: name@example.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on Phone Number field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on Phone Number field stating "Please fill out this field."
 
 _Scenario Five - Missing Required Field Email_
 
 Steps to test:
 
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on Email field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on Email field stating "Please fill out this field."
+
 _Scenario Six - Incorrect email format_
 
 Steps to test:
+
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: nameexample.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please include an '@' in the email address. 'nameexample.com is missing an '@'."
+
+Expected:
+
+Form lists error on Email field stating "Please include an '@' in the email address. 'nameexample.com is missing an '@'."
+
+Actual:
+
+Form lists error on Email field stating "Please include an '@' in the email address. 'nameexample.com is missing an '@'."
 
 _Scenario Seven - Missing Required Field Party Number_
 
 Steps to test:
 
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on Party Number field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on Part Number field stating "Please fill out this field."
+
 **Footer Social Media Icons / Links**
 
-
+Instagram and Facebook link both link to the Instagram and Facebook hompages as placeholders respectively.
 
 **Footer Contact Information**
 
-
+Both the phone number and email links forward in the correct way. 
 
 ### Validator Testing 
 

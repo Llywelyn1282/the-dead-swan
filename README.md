@@ -1,6 +1,6 @@
 # The Dead Swan
 
-The Dead Swan was created as my first milestone project for the Code Institutes Level 5 Diploma in Web Application Development.
+The Dead Swan was created as my first milestone project for the Code Institutes Level 5 Diploma in Web Application Development. The site is designed to showcase a fictional bar and restaurant in the Welsh town of Brecon. The site contains information about the history and ethos of the business, a kitchen menu, a gallery page, a booking form and contact information. 
 
 Link to deployed site: 
 https://llywelyn1282.github.io/the-dead-swan/index.html
@@ -9,10 +9,6 @@ https://llywelyn1282.github.io/the-dead-swan/index.html
 
 
 ## CONTENTS
-
-* [User Experience](#user-experience)
-  * [Project Goals](#project-goals)
-  * [User Stories](#user-stories)
 
 * [Design](#design)
   * [Colour Scheme](#colour-scheme)
@@ -52,39 +48,6 @@ https://llywelyn1282.github.io/the-dead-swan/index.html
 
 - - -
 
-## User Experience
-
-### Project Goals
-
-
-### User Stories
-
-#### __Target Audience__
-
-
-
-#### __First Time Visitor Goals__
-
-As a first time user of the site I want to be able to:
-
-* 
-
-#### __Returning Visitor Goals__
-
-As a returning registered user of the site I want to be able to:
-
-* 
-
-
-#### __Admin User__
-
-As an administrator for the site I want to be able to:
-
-* 
-
-- - -
-
-
 ## Design
 
 ### Colour Scheme
@@ -117,8 +80,6 @@ Favicon generated using [favicon.io](https://favicon.io/)
 
 ![Favicon](/documentation/favicon-image.png)
 
-
-
 ### Wireframes
 
 Wireframes were created for mobile and desktop using Balsamiq.
@@ -144,7 +105,6 @@ Wireframes were created for mobile and desktop using Balsamiq.
 ![Booking Request Received Page](/documentation/wireframe-booking-request-received.png)
 
 
-
 ## Features
 
 The website is comprised of 6 pages:
@@ -161,10 +121,9 @@ The website is comprised of 6 pages:
 
 __Navbar__
   
-* Bootstrap navbar styled to have right sided margin.
+* Bootstrap navbar styled to have right sided margin and burger icon on smaller devices. Contains links to Home, Menu, Gallery, Booking and Contact.
   
   ![Navbar](/documentation/navbar.png)
-
 
 __Footer__
 
@@ -174,9 +133,13 @@ __Footer__
 
 ### Home Page
 
+* The home page contains a welcome image of the bar, an about section and two calls to action links to the menu page and the booking page respectively.
+
 ![Home Page](/documentation/home-page.png)
 
 ### Menu Page
+
+* The menu page displays the current kitchen menu for the restaurant.
 
 ![Menu Page](/documentation/menu-1.png)
 
@@ -184,17 +147,25 @@ __Footer__
 
 ### Gallery Page
 
+* The gallery page displays several images of what the establishment has to offer such as the decor, happy patrons, live musicians, food and drink.
+
 ![Gallery Page](/documentation/gallery.png)
 
 ### Booking Page
+
+* The booking page contains a booking form for users to be able to request a table at the restaurant.
 
 ![Booking Page](/documentation/booking-form.png)
 
 ### Booking Request Received Page
 
+* A page the user will be directed to if they correctly fill out the booking form. The page has a link that allows users to navigate back to the homepage and automatically redirects back to the homepage after 20 seconds.
+
 ![Booking Request Received Page](/documentation/booking-request-received.png)
 
 ### 404 Error Page
+
+* A 404 page is in place to display if a user navigates to a broken link. The page has a link that allows users to navigate back to the homepage and automatically redirects back to the homepage after 20 seconds.
 
 ![404 Error Page](/documentation/404.png)
 
@@ -202,11 +173,13 @@ __Footer__
 
 In future implementations I would like to:
 
-* 
-
+* Update the form element with Javascript to send the form information in the form of an email to the establishment email address.
+* Include a newsletter sign up form.
+* Intergrate a live feed of social media pages on the site.
+* Intergrate the bar's Untappd page to keep potential patients up to date with the drinks on tap.
+* To include customer reviews and testimonials of the establishment on the site.
 
 - - -
-
 
 ## Technologies Used
 
@@ -532,10 +505,9 @@ CSS
 
 ### Unfixed Bugs
 
-
+When live testing a small issue was discovered on tablet sized screens, where on the booking-request-received.html and 404.html pages the footer became detached from the bottom of the screen. This issue does not created any overlapping elements, and plans are for it to be fixed by the next release.
 
 - - -
-
 
 ## Deployment & Local Development
 
@@ -576,25 +548,15 @@ The project will now of been cloned on your local machine for use.
 
 ## Credits
 
-### Code Used
-
-##### Home Page
-
-##### Menu Page
-
-##### Gallery Page
-
-##### Booking Page
-
-##### Booking Request Received Page
-
-##### Footer
-
 Flexbox tutorial used for alignment in footer:
 
 https://www.youtube.com/watch?v=2uvyx4YK_rQ&t=2s
 
+W3schools page used to learn how to link phone number in contact information:
+
 https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_phoneto
+
+W3schools page used to learn how to link email address in contact information:
 
 https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_link_mailto
 

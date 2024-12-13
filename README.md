@@ -404,7 +404,7 @@ Steps to test:
 
 HTML
   - No errors were returned when passing through the official [W3C Validator](https://validator.w3.org)
-  
+
   ![Index HTML Validator Results](documentation/home-validation.png)
   
   ![Menu HTML Validator Results](documentation/menu-validation.png)
@@ -419,6 +419,7 @@ HTML
 
 CSS
   - No errors were found when passing through the official [Jigsaw Validator](https://jigsaw.w3.org)
+  
   ![CSS Validator Results](documentation/css-validation.png)
 
 ### Unfixed Bugs

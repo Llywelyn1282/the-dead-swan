@@ -33,6 +33,7 @@ https://llywelyn1282.github.io/the-dead-swan/index.html
   * [Lighthouse Testing](#lighthouse-testing)
   * [Functional Testing](#functional-testing)
   * [Validator Testing](#validator-testing)
+  * [Fixed Bugs](#fixed-bugs)
   * [Unfixed Bugs](#unfixed-bugs)
 
 
@@ -330,6 +331,7 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be redirected to booking-request-received.html confirmation page
 
@@ -352,6 +354,7 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be given error reading "Please fill out this field."
 
@@ -374,6 +377,7 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be given error reading "Please fill out this field."
 
@@ -396,6 +400,7 @@ Steps to test:
    - Phone Number: 
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be given error reading "Please fill out this field."
 
@@ -418,6 +423,7 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be given error reading "Please fill out this field."
 
@@ -440,6 +446,7 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: nameexample.com
    - Party Number: 4
+   - Date: 01/01/2025
 3. Click Submit
 4. User should be given error reading "Please include an '@' in the email address. 'nameexample.com is missing an '@'."
 
@@ -462,6 +469,30 @@ Steps to test:
    - Phone Number: 012345678912
    - Email: name@example.com
    - Party Number: 4
+   - Date: 01/01/2025
+3. Click Submit
+4. User should be given error reading "Please fill out this field."
+
+Expected:
+
+Form lists error on Party Number field stating "Please fill out this field."
+
+Actual:
+
+Form lists error on Part Number field stating "Please fill out this field."
+
+_Scenario Eight - Missing Required Field Date_
+
+Steps to test:
+
+1. Navigate to [The Dead Swan - Booking](https://llywelyn1282.github.io/the-dead-swan/booking.html)
+2. Scroll down to the form and input the following data:
+   - First Name: John
+   - Last Name: Smith
+   - Phone Number: 012345678912
+   - Email: name@example.com
+   - Party Number: 4
+   - Date: dd/mm/yyyy
 3. Click Submit
 4. User should be given error reading "Please fill out this field."
 
@@ -503,9 +534,15 @@ CSS
   
   ![CSS Validator Results](documentation/css-validation.png)
 
+### Fixed Bugs
+
+* Had trouble overriding bootstrap default colors for the navbar. Solution was to use Dev Tools to highlight the effected area and find the correct bootstrap class or id to override in the stylesheet.
+
+* 
+
 ### Unfixed Bugs
 
-When live testing a small issue was discovered on tablet sized screens, where on the booking-request-received.html and 404.html pages the footer became detached from the bottom of the screen. This issue does not created any overlapping elements, and plans are for it to be fixed by the next release.
+* When live testing a small issue was discovered on tablet sized screens, where on the booking-request-received.html and 404.html pages the footer became detached from the bottom of the screen. This issue does not created any overlapping elements, and plans are for it to be fixed by the next release.
 
 - - -
 
@@ -547,6 +584,10 @@ The project will now of been cloned on your local machine for use.
 
 
 ## Credits
+
+W3schools page used to learn how to place text over images:
+
+https://www.w3schools.com/howto/howto_css_image_text.asp
 
 Flexbox tutorial used for alignment in footer:
 

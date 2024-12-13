@@ -538,7 +538,11 @@ CSS
 
 * Had trouble overriding bootstrap default colors for the navbar. Solution was to use Dev Tools to highlight the effected area and find the correct bootstrap class or id to override in the stylesheet.
 
-* 
+* Had issues with the alignment of the footer when using the Bootstrap grid, rebuilt it using flex instead to solve the issue.
+
+* Had issues with the centering of content on the booking-request-received.html and 404.html pages, as the content was instead aligning to the left. Fixed by targeting the parent container as well as the content with the centering command on the stylesheet.
+
+* Had issue with not being able to put lettering or punctation in the desired time part of the form input. Solved by turning it into a multiple choice selector instead.
 
 ### Unfixed Bugs
 
